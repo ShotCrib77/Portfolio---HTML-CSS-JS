@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #F6F7F9;
+}
+
+body {
+  background-color: #3F6184;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.container {
+  display: flex;
+  background-color: #323A45;
+  width: auto;
+  margin: 0 auto;
+  position: sticky;
+  z-index: 1000;
+  top:0;
+  justify-content: center;
+}
+
+.logo {
+  height: 3.75em;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 2000;
+  margin-left: 0.8rem;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.container {
+  width: auto;
+  margin: 0 auto;
+  position: sticky;
+  z-index: 1000;
+  top:0;
+}
+
+.nav-menu-items {
+  width:100%;
+  display:flex;
+  gap: 3rem;
+  font-size: 1.15rem;
+}
+
+.nav-branding {
+  font-size: 1.75rem;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7.5rem;
+}
+
+.nav-link {
+  transition: 0.3s ease-out;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  color: #F6F7F9;
+  text-decoration: none;
+  justify-content: center;
+}
+
+
+@media(max-width:1024px) {
+
+  .hamburger{
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:inherit;
+    margin-left: 0;
+    margin-top: 4.5rem;
+    font-size: 0.95rem;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top:0;
+    gap: 0;
+    flex-direction: column;
+    background-color: #323A45;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: -15px 10px 30px rgb(15, 14, 14);
+  }
+
+  .nav-item {
+    padding: 1rem 0;
+    width: 100%;
+  }
+
+  .nav-menu.active{
+    left: 0;
+  }
+
+  .nav-active-bar {
+    background-color: #3F6184;
+  }
+}
