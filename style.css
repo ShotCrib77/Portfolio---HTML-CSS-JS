@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  color: #F6F7F9;
 }
 
 body {
@@ -10,8 +9,10 @@ body {
 
 html {
   font-family: "Lato", sans-serif;
+  color: #F6F7F9;
 }
 
+/* NAV */
 nav {
   height: 4.5rem;
   display: flex;
@@ -150,3 +151,80 @@ nav a {
     background-color: #3F6184;
   }
 }
+/*! NAV */
+
+main {
+  padding: 5rem 0;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-text-div {
+  max-width: 60ch;
+  width: 80%;
+}
+
+#name {
+  margin-left: 1.5rem;
+}
+
+.about-section p {
+  margin: 0.75rem;
+  line-height: 1.5rem;
+}
+
+.languages-div {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.language-banner {
+  background-color:#323A45;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5rem;
+  font-size: 0.9em;
+  margin-right: 0.75rem;
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #323A45;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  display: inline-block;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+footer img {
+  width: 60%;
+}
+
+footer hr {
+  margin: 1.75rem 0;
+}
+.contacts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contacts i {
+  font-size: 2.5rem;
+}
+footer a {
+  color: #F6F7F9;
+  text-decoration: none;
+}
+
+/*! Footer */
