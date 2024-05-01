@@ -12,6 +12,13 @@ html {
   color: #F6F7F9;
 }
 
+.center-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /* NAV */
 nav {
   height: 4.5rem;
@@ -21,15 +28,13 @@ nav {
   width: 90%;
 }
 
-.container {
-  display: flex;
+header {
   background-color: #323A45;
   width: auto;
   margin: 0 auto;
   position: sticky;
   z-index: 1000;
   top:0;
-  justify-content: center;
 }
 
 .logo {
@@ -161,9 +166,10 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
-.about-text-div {
+.about-section article {
   max-width: 60ch;
   width: 80%;
 }
@@ -173,22 +179,25 @@ main {
 }
 
 .about-section p {
+  font-size: 1.3em;
   margin: 0.75rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 
-.languages-div {
+.about-section ul {
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
 }
-.language-banner {
+
+.about-section ul li {
   background-color:#323A45;
   padding: 0.5rem;
   border: none;
   border-radius: 5rem;
   font-size: 0.9em;
   margin-right: 0.75rem;
+  list-style-type: none;
 }
 
 
